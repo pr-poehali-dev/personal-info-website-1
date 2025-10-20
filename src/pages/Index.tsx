@@ -128,12 +128,12 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge>lololoshka</Badge>
-                  <Badge>genshin impact</Badge>
-                  <Badge>honkai star rail</Badge>
-                  <Badge>pjsekai</Badge>
-                  <Badge>cookie run kingdom</Badge>
-                  <Badge>gacha (life, club, life 2)</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">lololoshka</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">genshin impact</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">honkai star rail</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">pjsekai</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">cookie run kingdom</Badge>
+                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">gacha (life, club, life 2)</Badge>
                   <Badge>wonderend0</Badge>
                   <Badge>danganronpa</Badge>
                   <Badge>ddlc</Badge>
