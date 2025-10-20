@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
@@ -6,6 +6,8 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
+  const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
 
   const sections = [
     { id: 'about', label: 'О мне', icon: 'User' },
@@ -14,6 +16,25 @@ const Index = () => {
     { id: 'dni', label: 'DNI', icon: 'XCircle' },
     { id: 'byi', label: 'BYI', icon: 'Info' },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleSections((prev) => new Set(prev).add(entry.target.id));
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    Object.values(sectionRefs.current).forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -63,7 +84,15 @@ const Index = () => {
 
       <div className="pb-12">
         <div className="container mx-auto px-4 max-w-4xl space-y-12">
-          <section id="about" className="animate-fade-in">
+          <section 
+            id="about" 
+            ref={(el) => (sectionRefs.current['about'] = el)}
+            className={`transition-all duration-700 ${
+              visibleSections.has('about') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-10'
+            }`}
+          >
             <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3">
@@ -93,7 +122,15 @@ const Index = () => {
 
           <Separator className="my-8" />
 
-          <section id="fandoms" className="animate-fade-in">
+          <section 
+            id="fandoms" 
+            ref={(el) => (sectionRefs.current['fandoms'] = el)}
+            className={`transition-all duration-700 delay-100 ${
+              visibleSections.has('fandoms') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-10'
+            }`}
+          >
             <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3">
@@ -141,7 +178,15 @@ const Index = () => {
 
           <Separator className="my-8" />
 
-          <section id="kins" className="animate-fade-in">
+          <section 
+            id="kins" 
+            ref={(el) => (sectionRefs.current['kins'] = el)}
+            className={`transition-all duration-700 delay-200 ${
+              visibleSections.has('kins') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-10'
+            }`}
+          >
             <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3">
@@ -172,7 +217,15 @@ const Index = () => {
 
           <Separator className="my-8" />
 
-          <section id="dni" className="animate-fade-in">
+          <section 
+            id="dni" 
+            ref={(el) => (sectionRefs.current['dni'] = el)}
+            className={`transition-all duration-700 delay-300 ${
+              visibleSections.has('dni') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-10'
+            }`}
+          >
             <Card className="border-2 border-destructive/30 hover:border-destructive/50 transition-colors duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3">
@@ -206,7 +259,15 @@ const Index = () => {
 
           <Separator className="my-8" />
 
-          <section id="byi" className="animate-fade-in">
+          <section 
+            id="byi" 
+            ref={(el) => (sectionRefs.current['byi'] = el)}
+            className={`transition-all duration-700 delay-[400ms] ${
+              visibleSections.has('byi') 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-10'
+            }`}
+          >
             <Card className="border-2 hover:border-primary/50 transition-colors duration-300">
               <CardHeader>
                 <div className="flex items-center gap-3">
