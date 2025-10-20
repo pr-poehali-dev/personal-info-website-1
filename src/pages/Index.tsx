@@ -130,12 +130,12 @@ const Index = () => {
                 <div>
                   <h4 className="text-sm font-semibold text-muted-foreground mb-3">Основные</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">lololoshka</Badge>
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">genshin impact</Badge>
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">honkai star rail</Badge>
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">pjsekai</Badge>
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">cookie run kingdom</Badge>
-                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">gacha (life, club, life 2)</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">lololoshka</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">genshin impact</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">honkai star rail</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">pjsekai</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">cookie run kingdom</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-background border-2 border-primary text-primary font-semibold">gacha (life, club, life 2)</Badge>
                   </div>
                 </div>
                 <Separator />
