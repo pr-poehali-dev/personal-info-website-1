@@ -65,24 +65,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-              саня 🌻
-            </h1>
-            <p className="text-xl text-muted-foreground mb-6">подсолнух</p>
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <Badge variant="outline" className="text-base">she/her</Badge>
-              <Badge variant="outline" className="text-base">17 лет</Badge>
-              <Badge variant="outline" className="text-base">2 апреля</Badge>
-            </div>
-            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"></div>
-          </div>
-        </div>
-      </section>
-
-      <div className="pb-12">
+      <div className="pt-24 pb-12">
         <div className="container mx-auto px-4 max-w-4xl space-y-12">
           <section 
             id="about" 
