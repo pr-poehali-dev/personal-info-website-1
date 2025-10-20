@@ -126,14 +126,22 @@ const Index = () => {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">lololoshka</Badge>
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">genshin impact</Badge>
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">honkai star rail</Badge>
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">pjsekai</Badge>
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">cookie run kingdom</Badge>
-                  <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">gacha (life, club, life 2)</Badge>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="text-sm font-semibold text-muted-foreground mb-3">Основные</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">lololoshka</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">genshin impact</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">honkai star rail</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">pjsekai</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">cookie run kingdom</Badge>
+                    <Badge className="text-lg py-2 px-4 bg-primary text-primary-foreground">gacha (life, club, life 2)</Badge>
+                  </div>
+                </div>
+                <Separator />
+                <div>
+                  <h4 className="text-sm font-semibold text-muted-foreground mb-3">Дополнительные</h4>
+                  <div className="flex flex-wrap gap-2">
                   <Badge>wonderend0</Badge>
                   <Badge>danganronpa</Badge>
                   <Badge>ddlc</Badge>
@@ -154,6 +162,7 @@ const Index = () => {
                   <Badge>yttd</Badge>
                   <Badge>dead plate</Badge>
                   <Badge className="text-muted-foreground">... etc</Badge>
+                  </div>
                 </div>
               </CardContent>
             </Card>
