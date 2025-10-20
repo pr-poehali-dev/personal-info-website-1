@@ -60,13 +60,15 @@ const Index = () => {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Привет! Это мой личный сайт, где я делюсь информацией о себе, своих интересах и предпочтениях.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Креативный</Badge>
-                  <Badge variant="secondary">Открытый</Badge>
-                  <Badge variant="secondary">Дружелюбный</Badge>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-lg font-semibold mb-2">йо, мои псевдо <span className="text-primary">саня</span> / <span className="text-primary">подсолнух</span> 🌻</p>
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      <Badge variant="secondary">she/her or any cis girl</Badge>
+                      <Badge variant="secondary">17 лет</Badge>
+                      <Badge variant="secondary">др 2 апреля</Badge>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -88,23 +90,33 @@ const Index = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div className="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors">
-                    <h4 className="font-semibold mb-1">Аниме</h4>
-                    <p className="text-sm text-muted-foreground">Мои любимые аниме-сериалы</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors">
-                    <h4 className="font-semibold mb-1">Игры</h4>
-                    <p className="text-sm text-muted-foreground">Видеоигры, в которые я играю</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors">
-                    <h4 className="font-semibold mb-1">Книги</h4>
-                    <p className="text-sm text-muted-foreground">Любимые литературные произведения</p>
-                  </div>
-                  <div className="p-4 bg-muted rounded-lg hover:bg-muted/70 transition-colors">
-                    <h4 className="font-semibold mb-1">Сериалы</h4>
-                    <p className="text-sm text-muted-foreground">Интересные сериалы</p>
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>lololoshka</Badge>
+                  <Badge>genshin impact</Badge>
+                  <Badge>honkai star rail</Badge>
+                  <Badge>pjsekai</Badge>
+                  <Badge>cookie run kingdom</Badge>
+                  <Badge>gacha (life, club, life 2)</Badge>
+                  <Badge>wonderend0</Badge>
+                  <Badge>danganronpa</Badge>
+                  <Badge>ddlc</Badge>
+                  <Badge>tiny bunny</Badge>
+                  <Badge>tpoh</Badge>
+                  <Badge>zeno remake</Badge>
+                  <Badge>atomic heart</Badge>
+                  <Badge>beyond: two souls</Badge>
+                  <Badge>stardew valley</Badge>
+                  <Badge>pressure (roblox)</Badge>
+                  <Badge>kinito pet</Badge>
+                  <Badge>alien stage</Badge>
+                  <Badge>omori</Badge>
+                  <Badge>mouthwashing</Badge>
+                  <Badge>tadc</Badge>
+                  <Badge>poppy playtime</Badge>
+                  <Badge>amanda the adventurer</Badge>
+                  <Badge>yttd</Badge>
+                  <Badge>dead plate</Badge>
+                  <Badge className="text-muted-foreground">... etc</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -126,29 +138,16 @@ const Index = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="space-y-3">
-                  <div className="p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg border border-primary/20">
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-primary/20 rounded">
-                        <Icon name="Star" size={20} className="text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Персонаж 1</h4>
-                        <p className="text-sm text-muted-foreground">Описание персонажа и почему с ним ассоциация</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg border border-primary/20">
-                    <div className="flex items-start gap-3">
-                      <div className="p-2 bg-primary/20 rounded">
-                        <Icon name="Star" size={20} className="text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-1">Персонаж 2</h4>
-                        <p className="text-sm text-muted-foreground">Описание персонажа и почему с ним ассоциация</p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline" className="text-base py-2 px-4">toya aoyagi</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">dylan</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">hajime hinata</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">xiao</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">kazuha</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">sunny</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">wooly</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">maybe aventurine</Badge>
+                  <Badge variant="outline" className="text-base py-2 px-4">bronya</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -173,15 +172,15 @@ const Index = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-3 p-3 bg-destructive/5 rounded-lg">
                     <Icon name="AlertCircle" size={18} className="text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-sm">Люди, распространяющие негатив и токсичность</span>
+                    <span className="text-sm">база (базовые вещи типа гомофобии, педофилии, инцеста)</span>
                   </li>
                   <li className="flex items-start gap-3 p-3 bg-destructive/5 rounded-lg">
                     <Icon name="AlertCircle" size={18} className="text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-sm">Те, кто не уважает личные границы</span>
+                    <span className="text-sm">хейт моих любимых пейрингов/персонажей прямо при мне (можете ненавидеть, но не пишите этого мне)</span>
                   </li>
                   <li className="flex items-start gap-3 p-3 bg-destructive/5 rounded-lg">
                     <Icon name="AlertCircle" size={18} className="text-destructive mt-1 flex-shrink-0" />
-                    <span className="text-sm">Пользователи, занимающиеся троллингом</span>
+                    <span className="text-sm">18+ контент (прон, резня и тп) БЕЗ ПРЕДУПРЕЖДЕНИЯ / БЛЮРА</span>
                   </li>
                 </ul>
               </CardContent>
@@ -207,10 +206,37 @@ const Index = () => {
                 <div className="space-y-3">
                   <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
                     <div className="flex items-start gap-3">
-                      <Icon name="CheckCircle" size={20} className="text-primary mt-1 flex-shrink-0" />
+                      <Icon name="MessageCircle" size={20} className="text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold mb-1">Я ценю уважение</h4>
-                        <p className="text-sm text-muted-foreground">Взаимное уважение - основа хорошего общения</p>
+                        <h4 className="font-semibold mb-1">Про общение</h4>
+                        <p className="text-sm text-muted-foreground">я почти всегда в сети, потому стараюсь отвечать сразу. я много чего могу обсудить, но не тянуть всё на себе</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+                    <div className="flex items-start gap-3">
+                      <Icon name="User" size={20} className="text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold mb-1">Характер</h4>
+                        <p className="text-sm text-muted-foreground">могу сначала показаться стеснительной/не заинтересованной, однако это временно</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+                    <div className="flex items-start gap-3">
+                      <Icon name="XCircle" size={20} className="text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold mb-1">Что не нравится</h4>
+                        <p className="text-sm text-muted-foreground">я не очень люблю тех, кто часто обижается на всякую ерунду, а так же тех, кто слишком активный/серьёзный, поэтому, если вы такие, то скипайте меня 💔</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
+                    <div className="flex items-start gap-3">
+                      <Icon name="Heart" size={20} className="text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold mb-1">Буду рада</h4>
+                        <p className="text-sm text-muted-foreground">посидеть в рейве, поиграть в рб, пт или геншин, поставить парные аватарки или описания</p>
                       </div>
                     </div>
                   </div>
@@ -218,17 +244,8 @@ const Index = () => {
                     <div className="flex items-start gap-3">
                       <Icon name="CheckCircle" size={20} className="text-primary mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold mb-1">Могу отвечать не сразу</h4>
-                        <p className="text-sm text-muted-foreground">Иногда мне нужно время на ответ</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-4 bg-primary/5 rounded-lg border border-primary/20">
-                    <div className="flex items-start gap-3">
-                      <Icon name="CheckCircle" size={20} className="text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold mb-1">Открыт к дружелюбному общению</h4>
-                        <p className="text-sm text-muted-foreground">Всегда рад позитивным разговорам</p>
+                        <h4 className="font-semibold mb-1">Главное</h4>
+                        <p className="text-sm text-muted-foreground">я стараюсь уважать чужие интересы, пока вы уважаете мои</p>
                       </div>
                     </div>
                   </div>
